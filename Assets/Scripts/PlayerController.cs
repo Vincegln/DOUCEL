@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (Input.GetKey(KeyCode.LeftArrow))
 		{
 			Vector3 position = this.transform.position;
