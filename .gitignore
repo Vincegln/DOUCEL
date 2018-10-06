@@ -36,3 +36,6 @@ sysinfo.txt
 *.unitypackage
 
 \.idea/
+Assets/FungusExamples/
+
+Assets/FungusExamples\.meta

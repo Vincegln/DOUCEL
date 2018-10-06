@@ -1,18 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Fungus;
 using UnityEngine;
 
 public class NpcController : MonoBehaviour {
 
-	//private GameObject _go;
-	private bool _isPlayerThere = false;
+	public Flowchart Flowchart;
+	
+	private GameObject _go;
+	private float _playerSpeed;
 	
 	private void LateUpdate()
 	{
-		if (Input.GetKeyDown(KeyCode.F) && _isPlayerThere)
+		if (_go != null)
 		{
-			Debug.Log("Are you talking to me, fam ?");
+			if (Flowchart.GetBooleanVariable("Talking"))
+			{
+				_go.GetComponent<PlayerController>().Speed = 0.0f;
+			}
+			else
+			{
+				_go.GetComponent<PlayerController>().Speed = _playerSpeed;
+			}
 		}
 	}
 	
@@ -20,8 +30,9 @@ public class NpcController : MonoBehaviour {
 	{
 		if (other.CompareTag("Player"))
 		{
-			//_go = other.gameObject;
-			_isPlayerThere = true;
+			_go = other.gameObject;
+			_playerSpeed = _go.GetComponent<PlayerController>().Speed;
+			Flowchart.gameObject.SetActive(true);
 		}
 	}
 
@@ -29,8 +40,8 @@ public class NpcController : MonoBehaviour {
 	{
 		if (other.CompareTag("Player"))
 		{
-			//_go = null;
-			_isPlayerThere = false;
+			_go = null;
+			Flowchart.gameObject.SetActive(false);
 		}
 	}
 }

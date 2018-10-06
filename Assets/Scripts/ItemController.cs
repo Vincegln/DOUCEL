@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Fungus;
 using UnityEngine;
 
 public class ItemController : MonoBehaviour
@@ -15,7 +16,9 @@ public class ItemController : MonoBehaviour
         {
             PlayerController playerscript = _go.GetComponent<PlayerController>();
             
-            playerscript.Items.Add(this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite);
+            playerscript.Items.Add(this.transform.parent.gameObject);
+            
+            Flowchart.BroadcastFungusMessage("m");
             
             Debug.Log(playerscript.Items.Last().name + " picked up !");
             

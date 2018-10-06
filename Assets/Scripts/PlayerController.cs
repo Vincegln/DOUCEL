@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
 
 	public float Speed = 0.1f;
-	public List<Sprite> Items;
+	public List<GameObject> Items;
 	
 	// Use this for initialization
 	void Start ()
