@@ -11,6 +11,9 @@ public class GameController : MonoBehaviour
 	private int _minutesText;
 	public Text TimerText;
 	public Text PlaceText;
+	public List<Image> ItemSlots;
+	public List<Text> ItemNames;
+	public int NbOfItems = 0;
 	
 	// Update is called once per frame
 	void Update ()

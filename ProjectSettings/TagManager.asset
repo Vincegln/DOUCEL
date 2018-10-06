@@ -9,6 +9,7 @@ TagManager:
   - upperBorder
   - lowerBorder
   - GameManager
+  - Inventory
   layers:
   - Default
   - TransparentFX
