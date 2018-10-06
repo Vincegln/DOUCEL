@@ -18,7 +18,7 @@ public class ItemController : MonoBehaviour
             PlayerController playerscript = _go.GetComponent<PlayerController>();
             GameController gameScript = GameObject.FindWithTag("GameManager").GetComponent<GameController>();
             
-            playerscript.Items.Add(this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite);
+            //playerscript.Items.Add(this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite);
 
             Image itemSlot = gameScript.ItemSlots[gameScript.NbOfItems];
             itemSlot.sprite = this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite;
@@ -29,7 +29,7 @@ public class ItemController : MonoBehaviour
             itemName.gameObject.SetActive(true);
 
             gameScript.NbOfItems++;
-            Debug.Log(playerscript.Items.Last().name + " picked up !" + playerscript.Items.Count);
+            Debug.Log(itemName + " picked up !" + playerscript.Items.Count);
            
             Flowchart.BroadcastFungusMessage("m");
             this.transform.parent.gameObject.SetActive(false);

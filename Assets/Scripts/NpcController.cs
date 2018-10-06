@@ -32,7 +32,6 @@ public class NpcController : MonoBehaviour {
 		{
 			_go = other.gameObject;
 			_playerSpeed = _go.GetComponent<PlayerController>().Speed;
-			Debug.Log(Flowchart.GetVariable("State"));
 			Flowchart.BroadcastFungusMessage("playerThere");
 		}
 	}
