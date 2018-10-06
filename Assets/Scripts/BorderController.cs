@@ -3,10 +3,7 @@ using UnityEngine.Experimental.UIElements;
 
 public class BorderController : MonoBehaviour
 {
-	/*public Camera OldCamera;
-	public Camera NextCamera;*/
 	public GameObject NextBox;
-	
 	
 	private void OnTriggerEnter2D(Collider2D other)
 	{
