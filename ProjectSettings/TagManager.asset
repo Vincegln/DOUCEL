@@ -8,6 +8,7 @@ TagManager:
   - rightBorder
   - upperBorder
   - lowerBorder
+  - GameManager
   layers:
   - Default
   - TransparentFX

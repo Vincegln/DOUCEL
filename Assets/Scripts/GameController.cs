@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
 	private int _hoursText;
 	private int _minutesText;
 	public Text TimerText;
+	public Text PlaceText;
 	
 	// Update is called once per frame
 	void Update ()
