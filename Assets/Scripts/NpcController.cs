@@ -32,7 +32,8 @@ public class NpcController : MonoBehaviour {
 		{
 			_go = other.gameObject;
 			_playerSpeed = _go.GetComponent<PlayerController>().Speed;
-			Flowchart.gameObject.SetActive(true);
+			Debug.Log(Flowchart.GetVariable("State"));
+			Flowchart.BroadcastFungusMessage("playerThere");
 		}
 	}
 
@@ -41,7 +42,7 @@ public class NpcController : MonoBehaviour {
 		if (other.CompareTag("Player"))
 		{
 			_go = null;
-			Flowchart.gameObject.SetActive(false);
+			Flowchart.BroadcastFungusMessage("playerNotThere");
 		}
 	}
 }
