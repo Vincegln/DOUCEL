@@ -14,7 +14,12 @@ public class GameController : MonoBehaviour
 	public List<Image> ItemSlots;
 	public List<Text> ItemNames;
 	public int NbOfItems = 0;
-	
+
+	private void Start()
+	{
+		PlaceText.text = "Morgue";
+	}
+
 	// Update is called once per frame
 	void Update ()
 	{
