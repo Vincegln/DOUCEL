@@ -7,10 +7,12 @@ public class PlayerController : MonoBehaviour
 {
 
 	public float Speed = 0.1f;
+	public List<Sprite> Items;
 	
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+
 	}
 	
 	// Update is called once per frame
