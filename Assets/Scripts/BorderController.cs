@@ -33,6 +33,7 @@ public class BorderController : MonoBehaviour
 			
 			go.transform.position = newPosition;
 			NextBox.SetActive(true);
+			GameObject.FindWithTag("GameManager").GetComponent<GameController>().PlaceText.text = NextBox.name;
 			this.transform.parent.gameObject.SetActive(false);
 		}
 	}
