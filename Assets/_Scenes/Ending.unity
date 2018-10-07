@@ -728,6 +728,12 @@ GameObject:
   - component: {fileID: 1344264876}
   - component: {fileID: 1344264875}
   - component: {fileID: 1344264874}
+  - component: {fileID: 1344264889}
+  - component: {fileID: 1344264888}
+  - component: {fileID: 1344264887}
+  - component: {fileID: 1344264886}
+  - component: {fileID: 1344264885}
+  - component: {fileID: 1344264884}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -748,7 +754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 428.85736, y: -58.07544}
+  scrollPos: {x: 366.72403, y: -231.82143}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -1534,7 +1540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 329.8852
+    x: 328.16104
     y: 205.63934
     width: 120
     height: 40
@@ -1865,6 +1871,12 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1344264814}
+  - {fileID: 1344264889}
+  - {fileID: 1344264888}
+  - {fileID: 1344264887}
+  - {fileID: 1344264884}
+  - {fileID: 1344264886}
+  - {fileID: 1344264885}
 --- !u!114 &1344264816
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3890,6 +3902,160 @@ MonoBehaviour:
   itemId: 88
   indentLevel: 0
   storyText: Couteau
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1344264884
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344264778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 103
+  indentLevel: 1
+  storyText: "Ok, inspecteur, je comprends du coup. Bien jou\xE9 fiston ! Emmenez-moi
+    cette m\xE9g\xE8re en prison le temps que le proc\xE8s se fasse !\nQuand \xE0
+    vous autres... d\xE9guerpissez de mon bureau ! Et tirez les conclusions qui s'imposent
+    !"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1344264885
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344264778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 102
+  indentLevel: 1
+  storyText: "Nan, c\u2019est bien ce que je pensais\u2026 va falloir faire mieux
+    la prochaine fois fiston. En attendant, je vais aller rigoler un coup dans mon
+    bureau. "
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1344264886
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344264778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 101
+  indentLevel: 0
+--- !u!114 &1344264887
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344264778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 100
+  indentLevel: 1
+  storyText: "Elle l\u2019a tu\xE9e car quand son mari est revenu et lui \xE0 parler
+    d\u2019une dispute entre lui et G\xE9rard, elle a cru que celui-ci avait vendu
+    la m\xE8che. Elle a voulu se d\xE9barrasser de lui pour \xEAtre avec G\xE9rard
+    \xE9ternellement. Triste histoire\u2026"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1344264888
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344264778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 99
+  indentLevel: 1
+  storyText: "Michelle, la femme de Michael \xE0  tuer son mari avec un r\xF4ti congel\xE9
+    acheter la veille. Le coup \xE0 la t\xEAte a \xE9t\xE9 fatale, elle l\u2019a ensuite
+    train\xE9 jusqu\u2019\xE0 la salle \xE0 manger pour \xE9viter les soup\xE7ons
+    et a cass\xE9 la fen\xEAtre pour faire croire \xE0 un potentiel cambriolage."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1344264889
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344264778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 98
+  indentLevel: 1
+  storyText: Ok, je comprends rien, expliquez moi
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
