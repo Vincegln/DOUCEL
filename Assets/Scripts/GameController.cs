@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Fungus;
 using UnityEngine;
 using UnityEngine.Internal.Experimental.UIElements;
 using UnityEngine.SceneManagement;
@@ -8,7 +9,6 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-	//public float TimeLeft = 1200.0f;
 	public float TimeElapsed = 0.0f;
 	private int _hoursText;
 	private int _minutesText;
@@ -24,6 +24,8 @@ public class GameController : MonoBehaviour
 	public Button ReturnButton;
 	private bool _returnButtonClicked = false;
 	public GameObject MenuPanel;
+	public Flowchart JackFlowchart;
+	
 
 	private void Start()
 	{
@@ -55,6 +57,13 @@ public class GameController : MonoBehaviour
 		if (!_inGameMenu)
 		{
 			TimeElapsed += Time.deltaTime;
+			if (TimeElapsed > 86400)
+			{
+				Flowchart.BroadcastFungusMessage("Time's up");
+				while(!JackFlowchart.GetBooleanVariable("IsTimeUp"))
+				{}
+				SceneManager.LoadScene("Ending");
+			}
 			_hoursText = (int) ((TimeElapsed*72) / 3600);
 			_minutesText = (int) (TimeElapsed*72 - (_hoursText * 3600)) / 60;
 			if (_hoursText + 13 > 24)
