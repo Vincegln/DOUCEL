@@ -18,6 +18,8 @@ public class GameController : MonoBehaviour
 	public int NbOfItems = 0;
 	public Flowchart GhostFlowchart;
 	public Material invertedSprite;
+	public Material invertedStoryTextSprite;
+	
 
 	private void Start()
 	{
@@ -37,6 +39,7 @@ public class GameController : MonoBehaviour
 		{
 			isDarkside = !isDarkside;
 			invertedSprite.SetFloat("_INVERSION", !isDarkside ? 0.0f : 1.0f);
+			invertedStoryTextSprite.SetFloat("_INVERSION", !isDarkside ? 1.0f : 0.0f);
 		}
 		
 	}
