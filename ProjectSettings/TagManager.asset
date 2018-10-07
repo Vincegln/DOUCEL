@@ -10,6 +10,7 @@ TagManager:
   - lowerBorder
   - GameManager
   - Inventory
+  - inGameMenu
   layers:
   - Default
   - TransparentFX
