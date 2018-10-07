@@ -10,6 +10,7 @@ public class ItemController : MonoBehaviour
 
     private GameObject _go;
     private bool _isPlayerThere = false;
+    public string FungusMessage;
     
     private void LateUpdate()
     {
@@ -31,7 +32,7 @@ public class ItemController : MonoBehaviour
             gameScript.NbOfItems++;
             Debug.Log(itemName + " picked up !" + playerscript.Items.Count);
            
-            Flowchart.BroadcastFungusMessage("m");
+            Flowchart.BroadcastFungusMessage(FungusMessage);
             this.transform.parent.gameObject.SetActive(false);
         }
     }

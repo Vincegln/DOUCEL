@@ -29,6 +29,17 @@ public class GameController : MonoBehaviour
 	private bool _returnButtonClicked = false;
 	public GameObject MenuPanel;
 	public Flowchart JackFlowchart;
+	private bool _gameStarted = false;
+	public GameObject Jack;
+	private Vector3 jackInitPosition;
+	public float JackSpeed;
+	private bool _jackGone;
+	public float JackDistance;
+	private bool _jackLeaving = false;
+	public Animator moveJack;
+	private bool _ending = false;
+	public GameObject SayDialog;
+	public GameObject MenuDialog;
 	
 
 	private void Start()
@@ -39,15 +50,25 @@ public class GameController : MonoBehaviour
 		ExitButton.onClick.AddListener(ExitHandleClick);
 		ReturnButton.onClick.AddListener(ReturnHandleClick);
 		_playerScript = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+		jackInitPosition = Jack.transform.position;
+		invertedSprite.SetFloat("_INVERSION",0.0f);
+		invertedStoryTextSprite.SetFloat("_INVERSION",1.0f);
 	}
 
 	// Update is called once per frame
 	void Update ()
 	{
+		if (_ending || JackFlowchart.GetBooleanVariable("Finished"))
+		{
+			SceneManager.LoadScene("Ending");
+		}
+		Debug.Log(_gameStarted);
 		if (Input.GetKeyDown(KeyCode.Escape) || _returnButtonClicked)
 		{
 			if (!_inGameMenu)
 			{
+				SayDialog.SetActive(false);
+				MenuDialog.SetActive(false);
 				_playerSpeed = _playerScript.Speed;
 				_playerScript.Speed = 0.0f;
 				MenuPanel.SetActive(true);
@@ -57,6 +78,8 @@ public class GameController : MonoBehaviour
 				MenuPanel.SetActive(false);
 				_playerScript.Speed = _playerSpeed;
 				_returnButtonClicked = false;
+				SayDialog.SetActive(true);
+				MenuDialog.SetActive(true);
 			}
 			_inGameMenu = !_inGameMenu ;
 		}
@@ -64,16 +87,15 @@ public class GameController : MonoBehaviour
 		if (!_inGameMenu)
 		{
 			TimeElapsed += Time.deltaTime;
-			if (TimeElapsed > 86400)
+			if (TimeElapsed > 86400 && !_ending)
 			{
 				Flowchart.BroadcastFungusMessage("Time's up");
-				while(!JackFlowchart.GetBooleanVariable("IsTimeUp"))
-				{}
-				SceneManager.LoadScene("Ending");
+				_ending = true;
+				
 			}
 			_hoursText = (int) ((TimeElapsed*72) / 3600);
 			_minutesText = (int) (TimeElapsed*72 - (_hoursText * 3600)) / 60;
-			if (_hoursText + 13 > 24)
+			if (_hoursText + 13 > 23)
 			{
 				_hoursText -= 11;
 			}
@@ -81,12 +103,13 @@ public class GameController : MonoBehaviour
 			{
 				_hoursText += 13;}
 			TimerText.text = _hoursText + ":" + _minutesText.ToString("D2");
-		    if (isDarkside != GhostFlowchart.GetBooleanVariable("isDarkside"))
-		    {
-			    isDarkside = !isDarkside;
-			    invertedSprite.SetFloat("_INVERSION", !isDarkside ? 0.0f : 1.0f);
-			    invertedStoryTextSprite.SetFloat("_INVERSION", !isDarkside ? 1.0f : 0.0f);
-		    }
+			if (isDarkside != GhostFlowchart.GetBooleanVariable("isDarkside"))
+			{
+				isDarkside = !isDarkside;
+				invertedSprite.SetFloat("_INVERSION", !isDarkside ? 0.0f : 1.0f);
+				invertedStoryTextSprite.SetFloat("_INVERSION", !isDarkside ? 1.0f : 0.0f);
+			}
+
 		}
 	}
 	

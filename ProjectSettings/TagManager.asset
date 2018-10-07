@@ -11,6 +11,8 @@ TagManager:
   - GameManager
   - Inventory
   - inGameMenu
+  - SayDialog
+  - MenuDialog
   layers:
   - Default
   - TransparentFX
