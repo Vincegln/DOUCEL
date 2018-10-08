@@ -492,8 +492,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 91
   indentLevel: 0
-  storyText: "Le temps est \xE9coul\xE9 Strange ! J'en avais marre d'attendre dans
-    mon bureau !"
+  storyText: "Le temps est \xE9coul\xE9 Strange ! J'en avais marre d'attendre, venez
+    dans mon bureau !"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -924,12 +924,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1398844196}
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
---- !u!114 &37781734 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114393312463996230, guid: 4439bad588d9c664f9368dccd8ed4dcf,
-    type: 2}
-  m_PrefabInternal: {fileID: 1398844196}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &37781752 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114536067967795830, guid: 4439bad588d9c664f9368dccd8ed4dcf,
@@ -5954,7 +5948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -128.65196, y: 43.168404}
+  scrollPos: {x: 190.75099, y: 41.67581}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -11776,7 +11770,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &451558868
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 451558805}
@@ -11804,7 +11798,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &451558869
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 451558805}
@@ -11831,7 +11825,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &451558870
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 451558805}
@@ -11857,7 +11851,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &451558871
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 451558805}
@@ -16709,7 +16703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 659031909}
+  selectedFlowchart: {fileID: 1152765558}
 --- !u!4 &650919218
 Transform:
   m_ObjectHideFlags: 1
@@ -17302,7 +17296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 371
   indentLevel: 0
-  storyText: "Pouvez-vous m\u2019en dire sur cette lettre d\u2019amour que j\u2019ai
+  storyText: "Pouvez-vous m\u2019en dire plus sur cette lettre d\u2019amour que j\u2019ai
     trouv\xE9 dans votre maison ?"
   description: 
   character: {fileID: 1253371804}
@@ -19669,7 +19663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 184.95674, y: 204.127}
+  scrollPos: {x: 359.50198, y: 269.58142}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -27677,7 +27671,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 1152765482}
   selectedCommands: []
   variables:
   - {fileID: 1152765481}
@@ -30499,7 +30494,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 37781734}
+      objectReference: {fileID: 37781752}
     - target: {fileID: 114542725087850706, guid: 4439bad588d9c664f9368dccd8ed4dcf,
         type: 2}
       propertyPath: character
@@ -31021,6 +31016,12 @@ Prefab:
       value: "Un homme d\u2019une quarantaine d\u2019ann\xE9e, mort tr\xE8s certainement
         d\xFB au fait que l\u2019arri\xE8re de son cr\xE2ne ressemble \xE0 un fruit
         trop m\xFBr."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114764297792824970, guid: 4439bad588d9c664f9368dccd8ed4dcf,
+        type: 2}
+      propertyPath: storyText
+      value: "On va pouvoir le coincer en beaut\xE9 pendant le proc\xE8s, venez avec
+        moi, il est temps de se rendre dans mon bureau."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4439bad588d9c664f9368dccd8ed4dcf, type: 2}
@@ -39924,12 +39925,12 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 2048073364}
+      objectReference: {fileID: 2048073431}
     - target: {fileID: 114676563138792638, guid: e7404dadd0cfe3b4c84c214d03fddc75,
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2048073355}
+      objectReference: {fileID: 2048073333}
     - target: {fileID: 114839075198140430, guid: e7404dadd0cfe3b4c84c214d03fddc75,
         type: 2}
       propertyPath: character
@@ -40583,6 +40584,16 @@ Prefab:
       propertyPath: commandList.Array.data[5]
       value: 
       objectReference: {fileID: 2048073361}
+    - target: {fileID: 114144443685741276, guid: e7404dadd0cfe3b4c84c214d03fddc75,
+        type: 2}
+      propertyPath: storyText
+      value: Bonjour Madame, reconnaissez-vous cette liste ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114531998326555914, guid: e7404dadd0cfe3b4c84c214d03fddc75,
+        type: 2}
+      propertyPath: storyText
+      value: Bonjour Madame, reconnaissez-vous cette lettre ?
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7404dadd0cfe3b4c84c214d03fddc75, type: 2}
   m_IsPrefabAsset: 0
@@ -40835,7 +40846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
 --- !u!114 &2048073353
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2048073329}
@@ -40862,7 +40873,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2048073354
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2048073329}
@@ -40907,7 +40918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
 --- !u!114 &2048073358
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2048073329}
@@ -40934,7 +40945,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2048073359
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2048073329}
@@ -40962,7 +40973,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2048073360
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2048073329}
@@ -40995,7 +41006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
 --- !u!114 &2048073362
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2048073329}
@@ -41025,15 +41036,9 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2048073327}
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
---- !u!114 &2048073364 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114418009861255516, guid: e7404dadd0cfe3b4c84c214d03fddc75,
-    type: 2}
-  m_PrefabInternal: {fileID: 2048073327}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &2048073365
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2048073329}
@@ -41058,6 +41063,12 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &2048073431 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114296859585850966, guid: e7404dadd0cfe3b4c84c214d03fddc75,
+    type: 2}
+  m_PrefabInternal: {fileID: 2048073327}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!1 &2053912649 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1194478626076096, guid: f9afe221f0851f940a4a892c3d0bd8eb,
@@ -42231,7 +42242,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2105923464
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2105923450}
@@ -42258,7 +42269,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2105923465
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2105923450}

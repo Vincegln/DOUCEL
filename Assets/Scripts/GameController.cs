@@ -58,10 +58,17 @@ public class GameController : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+
+		if (JackFlowchart.GetBooleanVariable("JackLeaving"))
+		{
+			_gameStarted = true;
+		}
+		
 		if (_ending || JackFlowchart.GetBooleanVariable("Finished"))
 		{
 			SceneManager.LoadScene("Ending");
 		}
+		
 		Debug.Log(_gameStarted);
 		if (Input.GetKeyDown(KeyCode.Escape) || _returnButtonClicked)
 		{
@@ -86,15 +93,18 @@ public class GameController : MonoBehaviour
 
 		if (!_inGameMenu)
 		{
-			TimeElapsed += Time.deltaTime;
+			if (_gameStarted)
+			{
+				TimeElapsed += Time.deltaTime;
+			}
 			if (TimeElapsed > 86400 && !_ending)
 			{
 				Flowchart.BroadcastFungusMessage("Time's up");
 				_ending = true;
 				
 			}
-			_hoursText = (int) ((TimeElapsed*72) / 3600);
-			_minutesText = (int) (TimeElapsed*72 - (_hoursText * 3600)) / 60;
+			_hoursText = (int) ((TimeElapsed*48) / 3600);
+			_minutesText = (int) (TimeElapsed*48 - (_hoursText * 3600)) / 60;
 			if (_hoursText + 13 > 23)
 			{
 				_hoursText -= 11;

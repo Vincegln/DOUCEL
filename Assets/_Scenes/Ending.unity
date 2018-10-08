@@ -2142,6 +2142,12 @@ GameObject:
   - component: {fileID: 1344264894}
   - component: {fileID: 1344264901}
   - component: {fileID: 1344264900}
+  - component: {fileID: 1344264903}
+  - component: {fileID: 1344264902}
+  - component: {fileID: 1344264907}
+  - component: {fileID: 1344264905}
+  - component: {fileID: 1344264906}
+  - component: {fileID: 1344264904}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2162,7 +2168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 595.8354, y: 90.71708}
+  scrollPos: {x: 201.24109, y: 133.96027}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -2175,8 +2181,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1344264898}
-  selectedCommands:
-  - {fileID: 1344264900}
+  selectedCommands: []
   variables:
   - {fileID: 1344264780}
   - {fileID: 1344264809}
@@ -3212,7 +3217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 127
   indentLevel: 3
-  storyText: "Nan, c\u2019est bien ce que je pensais\u2026 va falloir faire mieux
+  storyText: "Non, c\u2019est bien ce que je pensais\u2026 Va falloir faire mieux
     la prochaine fois fiston. En attendant, je vais aller rigoler un coup dans mon
     bureau. "
   description: 
@@ -3241,9 +3246,7 @@ MonoBehaviour:
   itemId: 126
   indentLevel: 3
   storyText: "Ok, inspecteur, je comprends du coup. Bien jou\xE9 fiston ! Emmenez-moi
-    cette m\xE9g\xE8re en prison le temps que le proc\xE8s se fasse !\nQuand \xE0
-    vous autres... d\xE9guerpissez de mon bureau ! Et tirez les conclusions qui s'imposent
-    !"
+    cette m\xE9g\xE8re en prison le temps que le proc\xE8s se fasse !"
   description: 
   character: {fileID: 1867010229}
   portrait: {fileID: 0}
@@ -3604,7 +3607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 62
   indentLevel: 0
-  text: Dans le salon de la victime
+  text: le salon de la victime
   description: 
   targetBlock: {fileID: 1344264823}
   hideIfVisited: 0
@@ -3655,7 +3658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 60
   indentLevel: 0
-  text: Dans le jardin de la victime
+  text: le jardin de la victime
   description: 
   targetBlock: {fileID: 1344264840}
   hideIfVisited: 0
@@ -3679,7 +3682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 59
   indentLevel: 0
-  text: Dans la maison de Diane & Gerard
+  text: la maison de Diane & Gerard
   description: 
   targetBlock: {fileID: 1344264839}
   hideIfVisited: 0
@@ -3703,7 +3706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 58
   indentLevel: 0
-  text: "Dans la salle \xE0 manger de la victime"
+  text: "la salle \xE0 manger de la victime"
   description: 
   targetBlock: {fileID: 1344264841}
   hideIfVisited: 0
@@ -3727,7 +3730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 57
   indentLevel: 0
-  text: Dans la cuisine de la victime
+  text: la cuisine de la victime
   description: 
   targetBlock: {fileID: 1344264842}
   hideIfVisited: 0
@@ -4320,7 +4323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 40
   indentLevel: 0
-  text: Le couteau
+  text: le couteau
   description: 
   targetBlock: {fileID: 1344264851}
   hideIfVisited: 0
@@ -4344,7 +4347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 39
   indentLevel: 0
-  text: La batte de baseball
+  text: la batte de baseball
   description: 
   targetBlock: {fileID: 1344264850}
   hideIfVisited: 0
@@ -4368,7 +4371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 38
   indentLevel: 0
-  text: Les bris de verre
+  text: les bris de verre
   description: 
   targetBlock: {fileID: 1344264849}
   hideIfVisited: 0
@@ -4392,7 +4395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 37
   indentLevel: 0
-  text: Le vase
+  text: le vase
   description: 
   targetBlock: {fileID: 1344264848}
   hideIfVisited: 0
@@ -4551,7 +4554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 31
   indentLevel: 0
-  text: Le gigot
+  text: le gigot
   description: 
   targetBlock: {fileID: 1344264852}
   hideIfVisited: 0
@@ -4775,7 +4778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 85
   indentLevel: 0
-  storyText: "Bien s\xFBr, commissaire, l\u2019arme du crime est \n"
+  storyText: "Bien s\xFBr commissaire, l\u2019arme du crime est...\n"
   description: 
   character: {fileID: 2047845938}
   portrait: {fileID: 0}
@@ -4801,8 +4804,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 84
   indentLevel: 0
-  storyText: "Ok, choix audacieux, je suppose que vous connaissez l\u2019arme du crime
-    si vous \xEAtes sur de vous ?\n"
+  storyText: "Tr\xE8s bien, choix audacieux, je suppose que vous connaissez l\u2019arme
+    du crime si vous \xEAtes s\xFBr de vous ?\n"
   description: 
   character: {fileID: 1867010229}
   portrait: {fileID: 0}
@@ -4828,8 +4831,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 83
   indentLevel: 0
-  storyText: "Bon, je vous \xE9coute et par piti\xE9 faites vite ! Qui est coupable
-    selon vous ?\n"
+  storyText: "Bon, je vous \xE9coute et par piti\xE9 faites vite ! Qui est le ou la
+    coupable selon vous ?\n"
   description: 
   character: {fileID: 1867010229}
   portrait: {fileID: 0}
@@ -4991,7 +4994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 76
   indentLevel: 0
-  storyText: 'Le coupable est '
+  storyText: "D'apr\xE8s moi, le coupable est..."
   description: 
   character: {fileID: 2047845938}
   portrait: {fileID: 0}
@@ -5175,7 +5178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 92
   indentLevel: 0
-  storyText: "Le lieu du crime est \u2026"
+  storyText: Eh bien, le crime a eu lieu dans..
   description: 
   character: {fileID: 2047845938}
   portrait: {fileID: 0}
@@ -5201,8 +5204,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 91
   indentLevel: 0
-  storyText: "\u2026 Tr\xE8s bien, pourquoi pas\u2026 et le lieu, histoire que je
-    vous apprenne \xE0 vous moquer de moi ?"
+  storyText: "\u2026 D'accord, pourquoi pas\u2026 et le lieu, histoire que je vous
+    apprenne \xE0 vous moquer de moi ?"
   description: 
   character: {fileID: 1867010229}
   portrait: {fileID: 0}
@@ -5383,10 +5386,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 125
   indentLevel: 3
-  storyText: "Elle l\u2019a tu\xE9e car quand son mari est revenu et lui \xE0 parler
+  storyText: "Elle l\u2019a tu\xE9 car, quand son mari est rentr\xE9 et lui a parl\xE9
     d\u2019une dispute entre lui et G\xE9rard, elle a cru que celui-ci avait vendu
-    la m\xE8che. Elle a voulu se d\xE9barrasser de lui pour \xEAtre avec G\xE9rard
-    \xE9ternellement. Triste histoire\u2026"
+    la m\xE8che. "
   description: 
   character: {fileID: 2047845938}
   portrait: {fileID: 0}
@@ -5442,10 +5444,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 124
   indentLevel: 3
-  storyText: "Michelle, la femme de Michael \xE0  tuer son mari avec un r\xF4ti congel\xE9
-    acheter la veille. Le coup \xE0 la t\xEAte a \xE9t\xE9 fatale, elle l\u2019a ensuite
-    train\xE9 jusqu\u2019\xE0 la salle \xE0 manger pour \xE9viter les soup\xE7ons
-    et a cass\xE9 la fen\xEAtre pour faire croire \xE0 un potentiel cambriolage."
+  storyText: "Mich\xE8le, la femme de Michael, a tu\xE9 son mari avec un r\xF4ti congel\xE9
+    achet\xE9 la veille."
   description: 
   character: {fileID: 2047845938}
   portrait: {fileID: 0}
@@ -5471,7 +5471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 123
   indentLevel: 3
-  storyText: Ok, je comprends rien, expliquez moi
+  storyText: Ok, je comprends rien, expliquez moi.
   description: 
   character: {fileID: 1867010229}
   portrait: {fileID: 0}
@@ -5802,12 +5802,18 @@ MonoBehaviour:
   - {fileID: 1344264891}
   - {fileID: 1344264890}
   - {fileID: 1344264889}
+  - {fileID: 1344264903}
   - {fileID: 1344264886}
+  - {fileID: 1344264902}
   - {fileID: 1344264815}
   - {fileID: 1344264896}
   - {fileID: 1344264814}
   - {fileID: 1344264888}
+  - {fileID: 1344264907}
+  - {fileID: 1344264906}
   - {fileID: 1344264901}
+  - {fileID: 1344264905}
+  - {fileID: 1344264904}
   - {fileID: 1344264900}
   - {fileID: 1344264895}
   - {fileID: 1344264894}
@@ -5829,7 +5835,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &1344264900
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1344264778}
@@ -5842,7 +5848,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &1344264901
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1344264778}
@@ -5852,6 +5858,143 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 132
+  indentLevel: 1
+--- !u!114 &1344264902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344264778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 135
+  indentLevel: 3
+  storyText: "Elle a voulu se d\xE9barrasser de lui pour \xEAtre avec G\xE9rard \xE9ternellement.
+    Triste histoire\u2026"
+  description: 
+  character: {fileID: 2047845938}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1344264903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344264778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 134
+  indentLevel: 3
+  storyText: " Le coup \xE0 la t\xEAte a \xE9t\xE9 fatal, elle l\u2019a ensuite train\xE9
+    jusqu\u2019\xE0 la salle \xE0 manger pour \xE9viter les soup\xE7ons et a cass\xE9
+    la fen\xEAtre pour faire croire \xE0 un potentiel cambriolage."
+  description: 
+  character: {fileID: 2047845938}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1344264904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344264778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 139
+  indentLevel: 1
+  storyText: "Non, c\u2019est bien ce que je pensais\u2026 Va falloir faire mieux
+    la prochaine fois fiston. En attendant, je vais aller rigoler un coup dans mon
+    bureau. "
+  description: 
+  character: {fileID: 1867010229}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1344264905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344264778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 137
+  indentLevel: 0
+--- !u!114 &1344264906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344264778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 138
+  indentLevel: 2
+  storyText: "Non, c\u2019est bien ce que je pensais\u2026 Va falloir faire mieux
+    la prochaine fois fiston. En attendant, je vais aller rigoler un coup dans mon
+    bureau. "
+  description: 
+  character: {fileID: 1867010229}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1344264907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344264778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 136
   indentLevel: 1
 --- !u!1 &1353663195
 GameObject:
