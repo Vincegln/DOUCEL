@@ -30,7 +30,7 @@ We had to produce a game that would fit in two of three randomly determined gami
 
 - Mélanie Lachaise - Character, Environnment, Main Menu and Ending scene Artist / Programming
 
-- Léo Le Corre - Pixel Art artist / Writing
+- Léo Le Corre - Pixel art (characters and items) Artist / Writing
 
 - Thomas Sassano - Programming / Writing
 
