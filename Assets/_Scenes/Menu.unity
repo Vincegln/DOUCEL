@@ -1138,7 +1138,7 @@ MonoBehaviour:
   m_Text: "- Vincent Guillon -\nProgrammation / Musique / Interfaces\n\n- M\xE9lanie
     Lachaise -\nGraphismes / Programmation\n\n- L\xE9o Le Corre -\nGraphismes / Narration\n\n-
     Thomas Sassano -\nProgrammation / Narration\n\n- Lo\xEFc S\xE9razin -\nNarration
-    / Musique"
+    / Musique / Animation"
 --- !u!222 &1641486658
 CanvasRenderer:
   m_ObjectHideFlags: 0
