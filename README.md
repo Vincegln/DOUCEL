@@ -1,7 +1,7 @@
 # DOUCEL
 #### [Français] (English below, though the game is entirely in french)
 
-Ceci est notre projet pour l'édition d'Automne de la WonderJam 2018, sur le thème du "Changement".
+Ceci est notre projet pour l'édition d'Automne de la WonderJam 2018, sur le thème du "Changement", qui nous a valu la deuxième place du concours.
 
 Veuillez prendre place dans cette modeste aventure au sein du village de Doucel, où un crime horrible vient d'arriver et c'est à vous, inspecteur Strange, de démêler le vrai du faux pour trouver le coupable. Mais attention, votre temps est limité et votre attention requise pour venir à bout de cette affaire ! Heureusement, vous pourrez compter sur votre pouvoir paranormal pour vous aider, qui vous permet de changer de dimension en touchant le fantôme de la victime et ainsi réveler de nouvelles facettes chez les habitants. Bonne chance à vous !
 
