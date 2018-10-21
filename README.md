@@ -19,7 +19,7 @@ Nous avons eu à produire un jeu qui devait correspondre à deux de trois genres
 - Loïc Sérazin - Narration / Musique / Animation
 
 #### [English]
-Here is our entry for the WonderJam Fall Edition of 2018, the theme being "The Change".
+Here is our entry for the WonderJam Fall Edition of 2018, the theme being "The Change", which led us to the second place of the contest.
 
 Please enjoy your time in the little village of Doucel, where a horrible crime just happened and it's up to you, inspector Strange, to separate fact and fiction in order to find the culprit. But beware, the clock is ticking and all your attention will be required to finally be done with this case ! Fortunately, you will be able to count on your paranormal ability to help you, which allows you to switch between dimensions by touching the victim's ghost and thus revealing new facets within the inhabitants. Good luck !
 
