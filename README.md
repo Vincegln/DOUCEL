@@ -28,7 +28,7 @@ We had to produce a game that would fit in two of three randomly determined gami
 ##### Credits : 
 - Vincent Guillon - Programming / Music / UI
 
-- Mélanie Lachaise - Character, Environnment, Main Menu and Ending scene Artist / Programming
+- Mélanie Lachaise - Character, Environment, Main Menu and Ending scene Artist / Programming
 
 - Léo Le Corre - Pixel art (characters and items) Artist / Writing
 
